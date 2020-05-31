@@ -4,6 +4,6 @@ import BhaskaraController from './controllers/BhaskaraController';
 
 const routes =  Router();
 
-routes.get('/a', BhaskaraController.index);
+routes.post('/a', BhaskaraController.index);
 
 export default routes;
