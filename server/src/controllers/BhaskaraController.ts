@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import { authDelta } from './AuthController';
 
 function calculateDelta(
   coefficientA: number, 
@@ -30,8 +31,16 @@ export default{
     const { a, b, c } = request.body;
 
     const delta = calculateDelta(a, b, c);
-    const resultAcount = calculateBhaskara(a, b, delta);
+    const status = authDelta(delta);
     
-    return response.send(resultAcount);
+    if(status === true){
+      const resultAcount = calculateBhaskara(a, b, delta);
+      return response.send(resultAcount);
+    } else if(status === false){
+      return response.send({
+        deltaValue: delta,
+        message: 'The delta has no real roots'
+      });
+    }
   }
 }
