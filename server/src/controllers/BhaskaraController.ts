@@ -8,13 +8,30 @@ function calculateDelta(
   const result = 
     (coefficientB * coefficientB) - 4 * (coefficientA * coefficientC);
 
-  console.log(result);
-}
+  return result;
+};
+
+function calculateBhaskara(
+  coefficientA: number, 
+  coefficientB: number, 
+  delta: number,
+){
+  const resultBhaskara = {
+    delta: delta,
+    x1: (-(coefficientB) + (Math.sqrt(delta)))/(2 * coefficientA),
+    x2: (-(coefficientB) - (Math.sqrt(delta)))/(2 * coefficientA)
+  }
+
+  return {resultBhaskara};
+};
 
 export default{
-  index(req: Request, response: Response){
-    const { a, b, c } = req.body;
+  index(request: Request, response: Response){
+    const { a, b, c } = request.body;
 
-    return response.send(calculateDelta(a, b, c));
+    const delta = calculateDelta(a, b, c);
+    const resultAcount = calculateBhaskara(a, b, delta);
+    
+    return response.send(resultAcount);
   }
 }
