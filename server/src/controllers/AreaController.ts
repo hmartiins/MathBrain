@@ -1,4 +1,4 @@
-import { Request, Response, response } from 'express';
+import { Request, Response } from 'express';
 import { authMeasure } from './AuthController';
 
 function calculateTriangle(base: number, height: number){
