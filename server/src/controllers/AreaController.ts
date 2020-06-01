@@ -22,9 +22,12 @@ function calculateRectangle(base: number, height: number){
 };
 
 function calculateCircle(radius: number){
+  const resultAccount = Math.PI*(radius * radius);
+
   const result = {
     radius: radius,
-    result: Math.PI*(radius * radius)
+    pureResult: resultAccount,
+    approximateResult: resultAccount.toFixed(2)
   }
   return result;
 };
