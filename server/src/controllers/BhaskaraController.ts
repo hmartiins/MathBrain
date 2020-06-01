@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { authDelta } from './AuthController';
+  import { authDelta } from './AuthController';
 
 function calculateDelta(
   coefficientA: number, 
@@ -41,6 +41,6 @@ export default{
         deltaValue: delta,
         message: 'The delta has no real roots'
       });
-    }
+    };
   }
-}
+};
