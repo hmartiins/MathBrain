@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import { Request, Response, response } from 'express';
 import { authMeasure } from './AuthController';
 
 function calculateTriangle(base: number, height: number){
@@ -19,7 +19,15 @@ function calculateRectangle(base: number, height: number){
   }
 
   return result;
-}
+};
+
+function calculateCircle(radius: number){
+  const result = {
+    radius: radius,
+    result: Math.PI*(radius * radius)
+  }
+  return result;
+};
 
 export default{
   triangle(request: Request, response: Response){
@@ -51,5 +59,11 @@ export default{
         "message": 'There is no area with negative measures'
       });
    };
+  },
+  circle(request: Request, response: Response){
+    const { radius } = request.body;
+
+    const resultArea = calculateCircle(radius);
+    return response.send({resultArea}); 
   }
 };
