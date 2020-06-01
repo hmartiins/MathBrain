@@ -11,6 +11,16 @@ function calculateTriangle(base: number, height: number){
   return result;
 };
 
+function calculateRectangle(base: number, height: number){
+  const result = {
+    base: base,
+    height: height,
+    result: base * height
+  }
+
+  return result;
+}
+
 export default{
   triangle(request: Request, response: Response){
     const { base, height } = request.body;
@@ -19,6 +29,21 @@ export default{
 
     if(statusMeasure === true){
       const resultArea = calculateTriangle(base, height);
+      return response.send({resultArea});
+    } 
+    else if(statusMeasure === false){
+      return response.send({
+        "message": 'There is no area with negative measures'
+      });
+   };
+  },
+  rectangle(request: Request, response: Response){
+    const { base, height } = request.body;
+
+    const statusMeasure = authMeasure(base, height);
+
+    if(statusMeasure === true){
+      const resultArea = calculateRectangle(base, height);
       return response.send({resultArea});
     } 
     else if(statusMeasure === false){

@@ -7,5 +7,6 @@ const routes =  Router();
 
 routes.post('/bhaskaraAcount', BhaskaraController.index);
 routes.post('/areaAcount/triangle', AreaController.triangle);
+routes.post('/areaAcount/rectangle', AreaController.rectangle);
 
 export default routes;
