@@ -65,7 +65,7 @@ In order to test and run this project on your machine, follow these steps:
 
 #### [NodeJS](https://nodejs.org/en/)
 
-  2.To have TypeScript installed on your machine, if it is not installed, run:
+2. To have TypeScript installed on your machine, if it is not installed, run:
 
 ```
 npm install -g typescript
