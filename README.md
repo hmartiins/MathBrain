@@ -63,9 +63,9 @@ To get a local copy up and running follow these simple example steps.
 In order to test and run this project on your machine, follow these steps:
 1. Have the LTS version of Node (currently version 12.17.0)
 
-##### [NodeJS](https://nodejs.org/en/)
+#### [NodeJS](https://nodejs.org/en/)
 
-2.To have TypeScript installed on your machine, if it is not installed, run:
+  2.To have TypeScript installed on your machine, if it is not installed, run:
 
 ```
 npm install -g typescript
