@@ -1,6 +1,6 @@
 import React from 'react';
-// import { FaBrain } from 'react-icons/';
 
+// import Wave from './components/wave';
 import styles from './styles.module.css';
 
 const Main: React.FC = () => {
@@ -12,6 +12,7 @@ const Main: React.FC = () => {
             MathBrain
           </span>  
         </div>
+
       </div>      
     </div>
   );
