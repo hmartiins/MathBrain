@@ -20,3 +20,34 @@ body{
   font-family: 'Ubuntu', sans-serif;
   font-size: 21.5px;
 }
+.headerContainer{
+  display: flex;
+}
+.headerRight{
+  margin-left: auto;
+}
+.spanHeader{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  padding: 13px;
+}
+.myButton {
+  margin-left: 16px;
+	background-color:transparent;
+	border-radius:28px;
+	border:1px solid #4fb9c7;
+	display:inline-block;
+	cursor:pointer;
+	padding: 6px 19px;
+	text-decoration:none;
+}
+.illustration{
+  margin-top: 0%;
+  height: 500px;
+  width: 600px;
+}
+.illustrationImg{
+  height: 100%;
+  width: 100%;
+}
