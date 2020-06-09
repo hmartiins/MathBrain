@@ -1,5 +1,5 @@
 body{
-  background-color: #0e0eb1a0;
+  background-color: #348cbbbc;
 }
 .container{
   display: flex;
@@ -18,7 +18,8 @@ body{
 }
 .textLogo{
   font-family: 'Ubuntu', sans-serif;
-  font-size: 21.5px;
+  font-size: 28px;
+  padding: 4px 3px;
 }
 .headerContainer{
   display: flex;
@@ -32,22 +33,59 @@ body{
   font-style: italic;
   padding: 13px;
 }
-.myButton {
+.app {
   margin-left: 16px;
-	background-color:transparent;
-	border-radius:28px;
-	border:1px solid #4fb9c7;
-	display:inline-block;
-	cursor:pointer;
+	background-color: transparent;
+	border-radius: 28px;
+	border: 1px solid #4fb9c7;
+	display: inline-block;
+	cursor: pointer;
 	padding: 6px 19px;
 	text-decoration:none;
 }
+.containerMain{
+  display: flex;
+}
 .illustration{
-  margin-top: 0%;
-  height: 500px;
-  width: 600px;
+  margin-top: 1%;
+  height: 450px;
+  width: 650px;
+  margin-left: -1.5%;
 }
 .illustrationImg{
   height: 100%;
   width: 100%;
+}
+.contentMain{
+  margin-top: 8%;
+  margin-left: 0%;
+}
+.textMain{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  text-align: center;
+}
+.textSecondary{
+  margin-top: 4%;
+  font-size: 17px !important;
+}
+.button{
+  height: 15%;
+  width: 40%;
+  background-color: #4fb9c7;
+  border: none;
+  border-radius: 20px;
+  margin-top: 5%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.button span{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.icon{
+  margin-left: 20px;
 }
