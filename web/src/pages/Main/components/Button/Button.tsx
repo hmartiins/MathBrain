@@ -7,7 +7,11 @@ interface Iprops {
 }
 
 const Button: React.FC<Iprops> = (props) => {
-  return <strong className={styles.button}>{props.titleButton}</strong>;
+  return (
+    <button className={styles.button}>
+      <strong>{props.titleButton}</strong>
+    </button>
+  );
 };
 
 export default Button;

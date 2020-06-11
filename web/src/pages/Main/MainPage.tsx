@@ -16,7 +16,10 @@ const Main: React.FC = () => {
               <Button titleButton='Sobre o projeto' />
               <Button titleButton='Contato' />
               <Button titleButton='Sobre' />
-              <span className={styles.app}>Baixe o app mobile</span>
+
+              <button className={styles.app}>
+                <strong>Baixe o app mobile</strong>
+              </button>
             </div>
           </div>
           <div className={styles.containerMain}>
