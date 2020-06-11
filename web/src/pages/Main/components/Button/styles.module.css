@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  justify-content: center;
+  min-width: 80px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #176691bc;
+  padding: 10px;
+  margin: 2px 4px;
+  cursor: pointer;
+
+  border: 1px solid #348cbbbc;
+  border-radius: 8px;
+
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background-color: #348cbb87;
+  border: 1px solid #2687bbd5;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

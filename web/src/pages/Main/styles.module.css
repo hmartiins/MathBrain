@@ -1,11 +1,11 @@
-body{
+body {
   background-color: #348cbbbc;
 }
-.container{
+.container {
   display: flex;
   flex: 1;
 }
-.contentContainer{
+.contentContainer {
   background-color: #fcfcfc;
   margin: auto;
   margin-top: 1.58%;
@@ -13,64 +13,69 @@ body{
   width: 90%;
   border-radius: 25px;
 }
-.content{
+.content {
   padding: 20px 30px;
 }
-.textLogo{
+.textLogo {
   font-family: 'Ubuntu', sans-serif;
   font-size: 28px;
   padding: 4px 3px;
 }
-.headerContainer{
+.headerContainer {
   display: flex;
+  align-content: center;
 }
-.headerRight{
+.headerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
   margin-left: auto;
-}
-.spanHeader{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  padding: 13px;
+  padding: 0 3px;
 }
 .app {
+  align-content: center;
   margin-left: 16px;
-	background-color: transparent;
-	border-radius: 28px;
-	border: 1px solid #4fb9c7;
-	display: inline-block;
-	cursor: pointer;
-	padding: 6px 19px;
-	text-decoration:none;
+  background-color: transparent;
+  border-radius: 28px;
+  border: 1px solid #4fb9c7;
+  cursor: pointer;
+  padding: 6px 19px;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.containerMain{
+.containerMain {
   display: flex;
 }
-.illustration{
+.illustration {
   margin-top: 1%;
   height: 450px;
   width: 650px;
   margin-left: -1.5%;
 }
-.illustrationImg{
+.illustrationImg {
   height: 100%;
   width: 100%;
 }
-.contentMain{
+.contentMain {
   margin-top: 8%;
   margin-left: 0%;
 }
-.textMain{
+.textMain {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   font-size: 35px;
   text-align: center;
 }
-.textSecondary{
+.textSecondary {
   margin-top: 4%;
   font-size: 17px !important;
 }
-.button{
+.button {
   height: 15%;
   width: 40%;
   background-color: #4fb9c7;
@@ -81,11 +86,11 @@ body{
   justify-content: center;
   align-items: center;
 }
-.button span{
+.button span {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
 }
-.icon{
+.icon {
   margin-left: 20px;
 }
