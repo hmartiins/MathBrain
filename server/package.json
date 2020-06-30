@@ -14,7 +14,7 @@
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.9.3"
   },
-  "dependencies": {
+  "dependencies": { 
     "cors": "^2.8.5",
     "express": "^4.17.1"
   }
